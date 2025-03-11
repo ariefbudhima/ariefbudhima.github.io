@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arief Budhiman</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full Screen Layout */
+        body, html {
+            width: 100%;
+            height: 100%;
+            background: black;
+            overflow: hidden; /* Mencegah scroll */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Particles Background */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background: black;
+        }
+
+        /* Main Content */
+        .container {
+            width: 60%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: relative;
+            pointer-events: none;
+        }
+
+        .container * {
+            pointer-events: auto;
+        }
+
+        .left, .right {
+            width: 48%;
+            padding: 20px;
+            pointer-events: none;
+        }
+
+        .left {
+            text-align: right;
+            border-right: 2px solid red;
+        }
+
+        .right {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: red;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="left">
+            <h1>Arief Budhiman</h1>
+        </div>
+        <div class="right">
+            <p>Saya seorang Developer yang fokus pada Web & AI.</p>
+        </div>
+    </div>
+
+    <!-- Particles.js Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ff0000"
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.9,
+                    "random": true
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true, 
+                    "distance": 150, 
+                    "color": '#ff0000', 
+                    "opacity": 0.2, 
+                    "width": 2 },
+                "move": {
+                    "enable": true,
+                    "speed": 2
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
