@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/logo2.gif">
     <title>Arief Budhiman</title>
     <style>
         /* Reset */
@@ -64,6 +66,27 @@
             text-align: left;
         }
 
+        .contact {
+            position: absolute;
+            bottom: 20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1;
+        }
+
+        .contact a {
+            font-size: 40px;
+            color: white;
+            transition: transform 0.3s ease-in-out, color 0.3s;
+        }
+
+        .contact a:hover {
+            transform: scale(1.2);
+            color: red;
+        }
+
         h1 {
             font-size: 36px;
             color: red;
@@ -87,9 +110,27 @@
             <h1>Arief Budhiman</h1>
         </div>
         <div class="right">
-            <p>Saya seorang Developer yang fokus pada Web & AI.</p>
+            <p>Backend Developer.</p>
         </div>
     </div>
+
+    <div class="contact">
+        <a href="https://www.linkedin.com/in/ariefbudhiman" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ariefbudhima" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
+    <!-- <div class="contact">
+        <a href="https://www.linkedin.com/in/ariefbudhiman" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ariefbudhima" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+    </div> -->
 
     <!-- Particles.js Script -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -97,7 +138,7 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 100,
+                    "value": 150,
                     "density": {
                         "enable": true,
                         "value_area": 800
@@ -121,7 +162,7 @@
                     "enable": true, 
                     "distance": 150, 
                     "color": '#ff0000', 
-                    "opacity": 0.2, 
+                    "opacity": 0.3, 
                     "width": 2 },
                 "move": {
                     "enable": true,
@@ -132,7 +173,7 @@
                 "events": {
                     "onhover": {
                         "enable": true,
-                        "mode": "repulse"
+                        "mode": "grab"
                     }
                 }
             }
