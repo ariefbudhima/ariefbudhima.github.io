@@ -1,16 +1,52 @@
-site_name: Arief's Space
-site_url: https://ariefbudhima.github.io/
+site_name: Arief Budhiman Docs
+site_url: https://ariefbudhiman.github.io/
+repo_url: https://github.com/ariefbudhima/ariefbudhiman.github.io
+repo_name: ariefbudhiman.github.io
+
 theme:
   name: material
-  font:
-    text: Roboto
-    code: Roboto Mono
-  logo: 'assets/logo2.gif'
-  favicon: 'assets/favicon.ico'
+  custom_dir: overrides
   language: en
+  logo: 'assets/logo2.gif'
+  favicon: 'assets/logo2.gif'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: pink
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: white
+      accent: amber
   features:
-    - header.autohide
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+
+plugins:
+  - search
+  - blogging:
+      enabled: true
+      post_excerpt_max_words: 50 
+      use_directory_urls: true
+      paging: true
+  - social
+  - git-revision-date-localized
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.emoji
+  - pymdownx.tilde
+  # - pymdownx.tasklist:
+  #     clickable: true
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
 extra:
-  generator: false
-nav:
-  - Home: index.html
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ariefbudhima
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ariefbudhiman
