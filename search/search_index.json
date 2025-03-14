@@ -1,1 +1,1 @@
-{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"blogs/","title":"Blog","text":"<p>halo!</p>"}]}
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"projects/","title":"Project","text":"<p>halo!</p>"},{"location":"blogs/","title":"Blog","text":"<p>halo!</p>"}]}
