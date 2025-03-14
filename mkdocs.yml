@@ -27,7 +27,7 @@ plugins:
   - search
   - blogging:
       enabled: true
-      post_excerpt_max_words: 50 
+      # post_excerpt_max_words: 50 
       use_directory_urls: true
       paging: true
   - social
@@ -43,6 +43,12 @@ markdown_extensions:
   - pymdownx.details
   - attr_list
   - md_in_html
+
+nav:
+  - Home: index.html
+  - Blogs: 
+    - blogs/index.md
+  - Projects: projects.md
 
 extra:
   social:
